@@ -1,14 +1,11 @@
-# -*- coding: utf-8 -*-
+# -*- encoding: utf-8 -*-
 ##############################################################################
 #
-#    Copyright (C) 2011 Domsense srl (<http://www.domsense.com>)
-#    Copyright (C) 2011-2013 Agile Business Group sagl
-#    (<http://www.agilebg.com>)
-#    @author Jordi Esteve <jesteve@zikzakmedia.com>
-#    @author Lorenzo Battistini <lorenzo.battistini@agilebg.com>
-#    Ported to OpenERP 7.0 by Alex Comba <alex.comba@agilebg.com> and
-#    Bruno Bottacini <bruno.bottacini@dorella.com>
-#    Ported to Odoo by Andrea Cometa <info@andreacometa.it>
+#    Module Writen to OpenERP, Open Source Management Solution
+#    Copyright (C) 2015 OBERTIX FREE SOLUTIONS (<http://obertix.net>).
+#                       cubells <vicent@vcubells.net>
+#
+#    All Rights Reserved
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published
@@ -22,21 +19,23 @@
 #
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
 ##############################################################################
+
 {
-    'name': "Payments Due list",
-    'version': '0.1',
-    'category': 'Generic Modules/Payment',
-    'author': 'Odoo Community Association (OCA), Agile Business Group, '
-              'Zikzakmedia SL',
-    'website': 'http://www.agilebg.com',
-    'license': 'AGPL-3',
+    "name": "Payment due list with payment mode",
+    "version": "8.0.1.0.0",
+    "category": "Generic Modules/Payment",
+    "author": "Odoo Community Association (OCA),"
+              "Obertix, Free Solutions",
+    "contributors": ["cubells <vicent@vcubells.net>"],
+    "website": "http://www.obertix.net",
     "depends": [
-        'account',
+        "account_payment_partner",
+        "account_due_list",
     ],
     "data": [
-        'payment_view.xml',
+        'views/payment_view.xml',
     ],
     "installable": True,
+    "auto_install": True,
 }

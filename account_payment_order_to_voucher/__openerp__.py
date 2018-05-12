@@ -1,14 +1,7 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Copyright (C) 2011 Domsense srl (<http://www.domsense.com>)
-#    Copyright (C) 2011-2013 Agile Business Group sagl
-#    (<http://www.agilebg.com>)
-#    @author Jordi Esteve <jesteve@zikzakmedia.com>
-#    @author Lorenzo Battistini <lorenzo.battistini@agilebg.com>
-#    Ported to OpenERP 7.0 by Alex Comba <alex.comba@agilebg.com> and
-#    Bruno Bottacini <bruno.bottacini@dorella.com>
-#    Ported to Odoo by Andrea Cometa <info@andreacometa.it>
+#    Copyright (C) 2015 Lorenzo Battistini - Agile Business Group
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published
@@ -25,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': "Payments Due list",
-    'version': '0.1',
-    'category': 'Generic Modules/Payment',
-    'author': 'Odoo Community Association (OCA), Agile Business Group, '
-              'Zikzakmedia SL',
+    'name': "Payment order to voucher",
+    'version': '8.0.1.0.0',
+    'category': 'Accounting & Finance',
+    'author': 'Agile Business Group, Odoo Community Association (OCA)',
     'website': 'http://www.agilebg.com',
     'license': 'AGPL-3',
     "depends": [
-        'account',
+        'account_payment',
+        'account_voucher',
     ],
     "data": [
-        'payment_view.xml',
+        'views/payment_order_view.xml',
     ],
     "installable": True,
 }
